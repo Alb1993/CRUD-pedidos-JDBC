@@ -14,12 +14,12 @@ import java.sql.Statement;
  *
  * @author Albert
  */
-public class InsertItem {
-
-    public void insertarCliente(Cliente cliente) throws SQLException {
+public class DeleteItem {
+   
+    public static void DeleteCliente(Cliente cliente) throws SQLException{
         Connection con = DataSource.getConnection();
         Statement stmt = con.createStatement();
-        String query = "Insert into customers(customerEmail,idCard,customerName,phone,creditLimit,birthDate) values (" + cliente.getEmail() + "," + cliente.getDni() + "," + cliente.getNombre() + "," + cliente.getTelefono() + "," + cliente.getCreditoLimite() + "," + cliente.getFechaNacimiento() + ");";
+        String query = "delete from customers where customerEmail = " + cliente.getEmail();
         ResultSet rs = stmt.executeQuery(query);
     }
 
