@@ -26,6 +26,15 @@ public class Cliente {
         this.fechaNacimiento = fechaNacimiento;
     }
 
+    public Cliente() {
+        this.email = "";
+        this.dni = "";
+        this.nombre = "";
+        this.telefono = "";
+        this.creditoLimite = 0;
+        this.fechaNacimiento = "";
+    }
+
     public String getEmail() {
         return email;
     }
