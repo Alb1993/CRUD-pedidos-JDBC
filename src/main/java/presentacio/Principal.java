@@ -30,7 +30,7 @@ public class Principal {
 
     @FXML
     void onClickClientes(ActionEvent event) throws IOException {
-        App.setRoot("clientes");
+        
     }
 
     @FXML

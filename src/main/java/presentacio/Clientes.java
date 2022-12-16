@@ -35,7 +35,7 @@ public class Clientes {
 
     @FXML
     void onClickAtras(ActionEvent event) throws IOException {
-        App.setRoot("Principal");
+        App.setRoot("principal");
     }
 
     @FXML
